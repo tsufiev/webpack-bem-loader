@@ -1,10 +1,10 @@
 {
-  "name": "webpack-bem-loader",
+  "name": "@yandex-data-ui/webpack-bem-loader",
   "version": "0.6.3",
   "description": "Webpack BEM loader",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bem/webpack-bem-loader.git"
+    "url": "git://github.com/tsufiev/webpack-bem-loader.git"
   },
   "keywords": [
     "bem",
