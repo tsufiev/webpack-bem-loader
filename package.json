@@ -1,6 +1,6 @@
 {
   "name": "@yandex-data-ui/webpack-bem-loader",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Webpack BEM loader",
   "repository": {
     "type": "git",
