@@ -17,8 +17,8 @@ module.exports = function(source, inputSourceMap) {
     this.cacheable && this.cacheable();
 
     const callback = this.async(),
-        sourceMapsEnabled = Boolean(this.options.devtool),
         optionsFromCompiler = this.options && this.options.bemLoader,
+        sourceMapsEnabled = Boolean(optionsFromCompiler.devtool),
         options = Object.assign({}, optionsFromCompiler, loaderUtils.getOptions(this)),
         levelsMap = options.levels || bemConfig.levelMapSync(),
         levels = Array.isArray(levelsMap) ? levelsMap : Object.keys(levelsMap),
