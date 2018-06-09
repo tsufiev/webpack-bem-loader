@@ -18,8 +18,8 @@ module.exports = function(source, inputSourceMap) {
 
     const callback = this.async(),
         optionsFromCompiler = this.options && this.options.bemLoader,
-        sourceMapsEnabled = Boolean(optionsFromCompiler.devtool),
         options = Object.assign({}, optionsFromCompiler, loaderUtils.getOptions(this)),
+        sourceMapsEnabled = Boolean(options.devtool),
         levelsMap = options.levels || bemConfig.levelMapSync(),
         levels = Array.isArray(levelsMap) ? levelsMap : Object.keys(levelsMap),
         techs = options.techs || ['js'],
